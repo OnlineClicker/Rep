@@ -5,6 +5,7 @@ public class gitTest {
 		
 		int i=1;
 		
+		System.out.println(i);
 		
 		// TODO Auto-generated method stub
 
