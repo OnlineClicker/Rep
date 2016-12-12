@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:p="http://primefaces.org/ui">
+ <h:head></h:head>
+ <h:body>
+	<h:form>
+	
+	
+	
+	<p:dataTable>		<!-- datatable value und id evtl noch hinzufuegen -->
+	
+    <p:column headerText="Clicker ID">
+        <h:outputText value="#{QuizMB.clickerID}" />
+    </p:column>
+ 
+    <p:column headerText="Bezeichnung">
+        <h:outputText value="#{QuizMB.bezeichnung}" />
+    </p:column>
+ </p:dataTable>
+ 
+ 
+ <p:commandButton value="Bearbeiten" id="bearbeitenButton"  />
+  	<p:commandButton value="Auswerten" id="auswertenButton" ajax="false" />
+  	<p:commandButton value="Freigeben" id="freigebenButton" ajax="false" />
+  	
+  	<br/>
+  	<br/>
+  	<p:inputText />
+  	<h:form><p:commandButton value="Neues Clicker Event hinzufuegen" id="neuesClickerEventButton" ajax="false" /></h:form>
+ </h:form>
+ 
+ </h:body>
+</html>

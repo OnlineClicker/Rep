@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:p="http://primefaces.org/ui">
+ <h:head></h:head>
+ <h:body>
+	<h:form>
+	
+	 <h:outputLabel for="neueFrage" value="Frage eingeben: " />
+            <p:inputText id="neueFrageText" required="true" />
+	
+	 <p:panel id="panel" header="Antworten eintragen" style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel for="antwort1" value="1. Antwort:" />
+            <p:inputText id="antwort1"  />
+            <p:outputLabel for="antwort2" value="2. Antwort:" />
+            <p:inputText id="antwort2"  />
+            <p:outputLabel for="antwort3" value="3. Antwort:" />
+            <p:inputText id="antwort3" />
+            <p:outputLabel for="antwort4" value="4. Antwort:" />
+            <p:inputText id="antwort4" />
+             <p:outputLabel for="antwort5" value="5. Antwort:" />
+            <p:inputText id="antwort5"  />  
+            
+                <p:commandButton value="Frage hinzufuegen" update="panel"  />
+            
+        </h:panelGrid>
+    </p:panel>
+    
+    <p:panel id="panel2" header="Open End Frage eintragen" style="margin-bottom:10px;">
+    <p:outputLabel for="antwortOpenEnd" value="Antwort: " />
+            <p:inputText id="antwortOpenEnd"  /> 
+                <p:commandButton value="Frage hinzufuegen" update="panel"  />
+            
+    </p:panel>
+    <p:commandButton value="Zurueck" update="panel"  />
+	
+	
+	
+	 
+	
+	</h:form>
+ </h:body>
+</html>
+
+
