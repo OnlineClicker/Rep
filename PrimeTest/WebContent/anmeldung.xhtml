@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:p="http://primefaces.org/ui">  
+  
+
+<h:form>
+<p:panel id="panel" header="Login">
+ 
+        <p:messages id="msgs" />
+        
+    <h:panelGrid id="grid" cellpadding="5" columns="3" style="margin-bottom:10px">
+        <f:facet name="header">
+          
+        </f:facet>
+ 
+        <p:outputLabel for="username" value="Username:" />
+        <p:inputText id="username" value="#{userView.username}" required="true" requiredMessage="Username is required.">
+        
+        <f:validateLength minimum="3" />
+        </p:inputText>
+         <p:message for="username" display="icon" />
+         
+         
+ 
+        <p:outputLabel for="password" value="Password:" />
+        <p:inputText id="password" value="#{userView.password}" required="true" requiredMessage="Password is required." >
+        
+        
+        
+        <f:validateLength minimum="5" />
+        </p:inputText>
+        <p:message for="password" id="msgPassword" display="icon" />
+    </h:panelGrid>
+ 
+    <h:panelGrid columns="2" cellpadding="5">
+
+        <p:commandButton value="Back" id="btnBack" outcome="index"/>
+        <p:commandButton value="Accept" id="btnAccept" process="@this,username" update="grid" actionListener="#{userView.save}" />
+         <p:growl id="messages" />
+ <p:link outcome="index" value="Bookmark">
+   
+</p:link>
+ 
+    </h:panelGrid>
+    </p:panel>
+</h:form>
+</html> 
