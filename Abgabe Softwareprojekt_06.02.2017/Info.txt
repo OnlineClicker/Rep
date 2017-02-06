@@ -1,0 +1,42 @@
+Gruppe 2: Online-Clicker
+
+Unterlagen: 
+
+Maurice Touma (657440):
+Projektplan (Teamplan + Projektplan + Risikoliste + Liste offener Punkte)
+GAF
+Anforderungsliste
+
+Denys Khavin (656627):
+Fachkonzept
+Szenarien
+
+Arber Zekaj (646119):
+DV-Konzept
+Klassendiagramm
+
+Torben Köhne (655416)
+QM-Plan
+Testfälle
+
+Gruppe:
+SP_OnlineClicker (Jar-Datei)
+SP_OnlineClicker_Client (War-Datei)
+Standalone (XML-Datei)
+
+
+
+Datenbank:
+
+User: dmuser18
+Password: NewYork99
+
+Sequrity Check:
+
+User: admin
+Password: 123
+
+Server:
+
+Benutzername: MicrosoftAccount\koehne
+IP: 131.173.88.169
